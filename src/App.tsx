@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import * as D from './data';
 
 function App() {
 	console.log('app code');
@@ -17,6 +18,11 @@ function App() {
 				</a>
 			</header>
 			<h1>Hello world!!</h1>
+			<p>
+				{D.randomName()}, {D.randomJobTitle()}, {D.randomDayMonthYear()},
+			</p>
+			<img src={D.randomAvatar()} alt="아바타" height="50" />
+			<img src={D.randomImage()} alt="이미지 랜덤" height="300" />
 		</div>
 	);
 }
